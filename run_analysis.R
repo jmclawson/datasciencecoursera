@@ -56,7 +56,6 @@ colnames(fulldata)[562:563] <- c("activity","subject")
 colnames(fulldata) <- make.names(names=names(fulldata), 
                                  unique=TRUE, allow_ = TRUE)
  
-
 # Subset the appropriate data for step 2
 subData <- select(fulldata, 
                   contains(".mean"), 
