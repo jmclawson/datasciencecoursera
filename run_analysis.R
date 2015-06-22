@@ -32,21 +32,14 @@ if (!file.exists(destpath)){
 unzip(destpath, exdir=paste(".", destdir, "", sep="/"))
 fpath <- paste(paste(".", destdir, sep="/"),"UCI HAR Dataset",sep="/")
 
-# Add train and test data to fulldata if it doesn't exist
-fulldata <- data.frame()
-targets <- c("train", "test")
-for(target in targets){
-  aimX <- paste("X_", target, ".txt", sep="")
-  aimY <- paste("y_", target, ".txt", sep="")
-  aimSubject <- paste("subject_", target, ".txt", sep="")
-  targetpathX <- paste(fpath,target,aimX,sep="/")
-  targetpathY <- paste(fpath,target,aimY,sep="/")
-  targetSubject <- paste(fpath,target,aimSubject,sep="/")
-  targetdata <- cbind(read.table(targetpathX),
-                      read.table(targetpathY),
-                      read.table(targetSubject))
-  fulldata <- rbind(fulldata, targetdata)
-}
+# Add train and test data to fulldata
+traindata <- cbind(read.table(paste(fpath, "train/X_train.txt", sep="/")),
+                   read.table(paste(fpath, "train/y_train.txt", sep="/")),
+                   read.table(paste(fpath, "train/subject_train.txt", sep="/")))
+testdata <- cbind(read.table(paste(fpath, "test/X_test.txt", sep="/")),
+                  read.table(paste(fpath, "test/y_test.txt", sep="/")),
+                  read.table(paste(fpath, "test/subject_test.txt", sep="/")))
+fulldata <- rbind (traindata, testdata)
 
 # for step 4, name columns, adding activity and subject
 features <- read.table(paste(fpath,"features.txt",sep="/"))
