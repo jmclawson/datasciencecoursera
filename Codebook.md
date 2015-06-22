@@ -1,69 +1,16 @@
-# Code Book
-Subject - The individual subject from whom data was retrieved
-Activity - The activity type corresponding to each measurement, comprised of one of one of six possible activities: "WALKING", "WALKING_UPSTAIRS", "WALKING_DOWNSTAIRS", "SITTING", "STANDING", or "LAYING"
-"tBodyAcc.mean...X" - for each subject in in each subject, the average of all measurements of this kind
-"tBodyAcc.mean...Y" - for each subject in in each subject, the average of all measurements of this kind
-"tBodyAcc.mean...Z" - for each subject in in each subject, the average of all measurements of this kind
-"tGravityAcc.mean...X" - for each subject in in each subject, the average of all measurements of this kind
-"tGravityAcc.mean...Y" - for each subject in in each subject, the average of all measurements of this kind
-"tGravityAcc.mean...Z" - for each subject in in each subject, the average of all measurements of this kind
-"tBodyAccJerk.mean...X" - for each subject in in each subject, the average of all measurements of this kind 
-"tBodyAccJerk.mean...Y" - for each subject in in each subject, the average of all measurements of this kind 
-"tBodyAccJerk.mean...Z" - for each subject in in each subject, the average of all measurements of this kind 
-"tBodyGyro.mean...X" - for each subject in in each subject, the average of all measurements of this kind
-"tBodyGyro.mean...Y" - for each subject in in each subject, the average of all measurements of this kind
-"tBodyGyro.mean...Z" - for each subject in in each subject, the average of all measurements of this kind
-"tBodyGyroJerk.mean...X" - for each subject in in each subject, the average of all measurements of this kind
-"tBodyGyroJerk.mean...Y" - for each subject in in each subject, the average of all measurements of this kind
-"tBodyGyroJerk.mean...Z"      - for each subject in in each subject, the average of all measurements of this kind
-"tBodyAccMag.mean.." - for each subject in in each subject, the average of all measurements of this kind 
-"tGravityAccMag.mean.." - for each subject in in each subject, the average of all measurements of this kind
-"tBodyAccJerkMag.mean.."      - for each subject in in each subject, the average of all measurements of this kind
-"tBodyGyroMag.mean.."  - for each subject in in each subject, the average of all measurements of this kind this kind
-"tBodyGyroJerkMag.mean.."  - for each subject in in each subject, the average of all measurements of this kind
-"fBodyAcc.mean...X"  - for each subject in in each subject, the average of all measurements of this kind
-"fBodyAcc.mean...Y"  - for each subject in in each subject, the average of all measurements of this kind
-"fBodyAcc.mean...Z"  - for each subject in in each subject, the average of all measurements of this kind
-"fBodyAccJerk.mean...X"  - for each subject in in each subject, the average of all measurements of this kind
-"fBodyAccJerk.mean...Y"  - for each subject in in each subject, the average of all measurements of this kind
-"fBodyAccJerk.mean...Z"  - for each subject in in each subject, the average of all measurements of this kind
-"fBodyGyro.mean...X"  - for each subject in in each subject, the average of all measurements of this kind
-"fBodyGyro.mean...Y"  - for each subject in in each subject, the average of all measurements of this kind
-"fBodyGyro.mean...Z"  - for each subject in in each subject, the average of all measurements of this kind
-"fBodyAccMag.mean.."  - for each subject in in each subject, the average of all measurements of this kind
-"fBodyBodyAccJerkMag.mean.."  - for each subject in in each subject, the average of all measurements of this kind
-"fBodyBodyGyroMag.mean.."  - for each subject in in each subject, the average of all measurements of this kind
-"fBodyBodyGyroJerkMag.mean.."  - for each subject in in each subject, the average of all measurements of this kind
-"tBodyAcc.std...X"  - for each subject in in each subject, the average of all measurements of this kind
-"tBodyAcc.std...Y"  - for each subject in in each subject, the average of all measurements of this kind
-"tBodyAcc.std...Z"  - for each subject in in each subject, the average of all measurements of this kind
-"tGravityAcc.std...X"  - for each subject in in each subject, the average of all measurements of this kind
-"tGravityAcc.std...Y"  - for each subject in in each subject, the average of all measurements of this kind
-"tGravityAcc.std...Z"          - for each subject in in each subject, the average of all measurements of this kind
-"tBodyAccJerk.std...X"  - for each subject in in each subject, the average of all measurements of this kind
-"tBodyAccJerk.std...Y"  - for each subject in in each subject, the average of all measurements of this kind
-"tBodyAccJerk.std...Z"  - for each subject in in each subject, the average of all measurements of this kind
-"tBodyGyro.std...X"  - for each subject in in each subject, the average of all measurements of this kind
-"tBodyGyro.std...Y"  - for each subject in in each subject, the average of all measurements of this kind
-"tBodyGyro.std...Z"            - for each subject in in each subject, the average of all measurements of this kind
-"tBodyGyroJerk.std...X"  - for each subject in in each subject, the average of all measurements of this kind
-"tBodyGyroJerk.std...Y"  - for each subject in in each subject, the average of all measurements of this kind
-"tBodyGyroJerk.std...Z"  - for each subject in in each subject, the average of all measurements of this kind
-"tBodyAccMag.std.."  - for each subject in in each subject, the average of all measurements of this kind
-"tGravityAccMag.std.."  - for each subject in in each subject, the average of all measurements of this kind
-"tBodyAccJerkMag.std.."  - for each subject in in each subject, the average of all measurements of this kind
-"tBodyGyroMag.std.."  - for each subject in in each subject, the average of all measurements of this kind
-"tBodyGyroJerkMag.std.."  - for each subject in in each subject, the average of all measurements of this kind
-"fBodyAcc.std...X"  - for each subject in in each subject, the average of all measurements of this kind
-"fBodyAcc.std...Y"  - for each subject in in each subject, the average of all measurements of this kind
-"fBodyAcc.std...Z"  - for each subject in in each subject, the average of all measurements of this kind
-"fBodyAccJerk.std...X"  - for each subject in in each subject, the average of all measurements of this kind
-"fBodyAccJerk.std...Y"  - for each subject in in each subject, the average of all measurements of this kind
-"fBodyAccJerk.std...Z"  - for each subject in in each subject, the average of all measurements of this kind
-"fBodyGyro.std...X"  - for each subject in in each subject, the average of all measurements of this kind
-"fBodyGyro.std...Y"  - for each subject in in each subject, the average of all measurements of this kind
-"fBodyGyro.std...Z"  - for each subject in in each subject, the average of all measurements of this kind
-"fBodyAccMag.std.."  - for each subject in in each subject, the average of all measurements of this kind
-"fBodyBodyAccJerkMag.std.."  - for each subject in in each subject, the average of all measurements of this kind
-"fBodyBodyGyroMag.std.."  - for each subject in in each subject, the average of all measurements of this kind
-"fBodyBodyGyroJerkMag.std.."  - for each subject in in each subject, the average of all measurements of this kind
+# Summary
+The script provided here allows for analysis of a specific dataset. The original dataset included sensor measurements from the phones of thirty subjects taking part in one of six activities; these data are originally split across a number of tables. For each activity performed by each subject, ’run_analysis.R’ returns a single tidy dataset of the averages of the variables that are standard deviations or means.
+
+# Method
+1. First, ’run_analysis.R’ checks for a local version of the dataset, downloading and unzipping it if needed. 
+2. Next, reading ‘subject_test.txt’, ‘y_test.txt’, ‘X_test.txt’, ’subject_train.txt’, ‘y_train.txt’, and ‘X_train.txt’, it combines these data into one main table. 
+3. From ‘features.txt’, it names most variables, adding “subject” as the variable name for data from `subject_test.txt’ and ‘subject_train.txt’, and adding “activity” as the variable name for data from ‘y_test.txt’ and ‘y_train.txt’.
+4. Using these variable names, it subsets only those that include ‘.mean’, ‘.std’, ‘activity’, and ‘subject’, excluding those that include ‘.meanFreq’.
+5. Finally, it organizes the data to find and return variable averages for each activity performed by each subject. It outputs this data to a file, ‘data_analysis.csv’. 
+
+# Variables
+The first two columns indicate the subject (numbered 1 to 30) and activity (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING). Variable names for columns 3 through 68 derive from the original dataset and describe records from motion sensors in Samsung Galaxy S II smartphones. These variables are prefixed by ’t’ to indicate time domain signals or ‘f’ to indicate frequency domain signals. All variable names provide abbreviations of a set of measurements. Some variables are split among three dimensions (marked by X, Y, and Z), while others mark the magnitude of these dimensions (marked by ‘Mag’).
+
+# Sources
+The original dataset can be found at 
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
